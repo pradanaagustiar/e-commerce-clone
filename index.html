@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-commerce clone</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <header class="container-fluid sticky-top px-0">
+        <nav class="d-flex justify-content-between align-items-center bg-secondary py-2">
+          <div class="link-item-kiri">
+            <span class="ms-5"><i class="fa fa-mobile me-1 icon-mobileapp" aria-hidden="true"></i>Download Tokopaktiar App</span>
+          </div>
+          <div class="icon-sosmed mx-4">
+            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+            <span><i class="fa fa-bell" aria-hidden="true"></i></span>
+            <span><i class="fa fa-comment" aria-hidden="true"></i></span>
+          </div>
+          <div class="link-item-kanan">
+            <span class="me-4">Tentang Tokopaktiar</span>
+            <span class="me-4">Mitra Tokopaktiar</span>
+            <span class="me-4">Mulai Jualan</span>
+            <span class="me-5">Customer Care Tokopaktiar</span>
+          </div>
+        </nav>
+        <div class="d-flex justify-content-between align-items-center pt-2 logo-cari-masuk">
+          <div class="d-flex justify-content-start align-items-center">
+            <nav class="navbar-brand ms-5">
+              <img src="aset/img/brand.png" alt="Tokopaktiar" />
+            </nav>
+          </div>
+          <div class="d-flex justify-content-center align-items-center w-100">
+            <span class="kategori">Kategori</span>
+            <input type="search" class="d-block w-75" placeholder="Cari di Tokopaktiar" />
+            <i class="fa fa-search icon-search" aria-hidden="true"></i>
+            <!-- <button class="btn btn-sm btn-warning ms-3 px-3">Cari</button> -->
+            <i class="fa fa-shopping-cart mx-4 shop-cart" aria-hidden="true"></i>
+          </div>
+          <div class="d-flex justify-content-end align-items-center me-5">
+            <button class="btn btn-sm btn-outline-warning me-3">Masuk</button>
+            <button class="btn btn-sm btn-warning">Daftar</button>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center pb-3 span-produk">
+          <span class="mx-2">Rumah Tangga</span>
+          <span class="mx-2">Elektronik</span>
+          <span class="mx-2">Fashion</span>
+          <span class="mx-2">Fashion Anak</span>
+          <span class="mx-2">Mainan Anak</span>
+          <span class="mx-2">Kecantikan</span>
+          <span class="mx-2">Kesehatan</span>
+          <span class="mx-2">Olahraga</span>
+        </div>
+      </header>
+      <!-- carousel -->
+      <div class="container mt-3 px-0">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-8">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="aset/img/cr1.png" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="aset/img/cr2.png" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 banner-diam">
+            <img src="aset/img/banneratas.png" alt="" />
+            <img src="aset/img/bannerbawah.jfif" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- end carousel -->
+
+      <div class="container px-0 my-3">
+        <div class="card pt-2 pb-3 br-kartu">
+          <div class="row">
+            <div class="col">
+              <h5 class="ms-3">Kategori</h5>
+              <div class="d-flex hover-kategori">
+                <div class="card ms-3 me-1" style="width: 8rem">
+                  <img src="aset/img/img-kategori.png" class="card-img-top gambar-kartu" alt="" />
+                  <div class="card-body py-1">
+                    <div class="card-title text-center">Mainan</div>
+                  </div>
+                </div>
+                <div class="card mx-1" style="width: 8rem">
+                  <img src="aset/img/img-kategori.png" class="card-img-top gambar-kartu" alt="" />
+                  <div class="card-body py-1">
+                    <div class="card-title text-center">Fashion</div>
+                  </div>
+                </div>
+                <div class="card mx-1" style="width: 8rem">
+                  <img src="aset/img/img-kategori.png" class="card-img-top gambar-kartu" alt="" />
+                  <div class="card-body py-1">
+                    <div class="card-title text-center">Beauty</div>
+                  </div>
+                </div>
+                <div class="card ms-1 me-2" style="width: 8rem">
+                  <img src="aset/img/img-kategori.png" class="card-img-top gambar-kartu" alt="" />
+                  <div class="card-body py-1">
+                    <div class="card-title text-center">Elektronik</div>
+                  </div>
+                </div>
+                <div class="card ms-1 me-2" style="width: 8rem">
+                  <img src="aset/img/img-kategori.png" class="card-img-top gambar-kartu" alt="" />
+                  <div class="card-body py-1">
+                    <div class="card-title text-center">Perabotan</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <h5>Top Up & Tagihan</h5>
+              <div class="card bg-light me-3">
+                <div class="card-body pt-1 px-0">
+                  <div class="nav-card">
+                    <span class="ms-3 me-4 pulsa-aktif">Pulsa</span>
+                    <span class="mx-4">Paket Data</span>
+                    <span class="mx-4">Listrik</span>
+                    <span class="mx-4">PDAM</span>
+                    <span class="ms-2 me-3">Tagihan Lain</span>
+                    <hr class="mx-0 px-0" />
+                  </div>
+                  <form class="d-flex ms-3">
+                    <div class="col-5 me-3">
+                      <label class="form-label">Nomor Telepon</label>
+                      <input type="text" class="form-control" placeholder="0123456789" />
+                    </div>
+                    <div class="col-5 me-2">
+                      <label class="form-label">Nominal</label>
+                      <select name="" id="" class="form-select">
+                        <option value=""></option>
+                        <option value="">10.000</option>
+                        <option value="">20.000</option>
+                        <option value="">50.000</option>
+                      </select>
+                    </div>
+                    <div class="col-2">
+                      <button type="submit" class="btn btn-secondary btn-beli">Beli</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container wrapper">
+            <div class="item-kategori">
+              <a href="#" class="btn btn-outline-light">Elektronik</a>
+              <a href="#" class="btn btn-outline-light">Handphone</a>
+              <a href="#" class="btn btn-outline-light">Kecantikan</a>
+              <a href="#" class="btn btn-outline-light">Kesehatan</a>
+              <a href="#" class="btn btn-outline-light">Keuangan</a>
+              <a href="#" class="btn btn-outline-light">Travel</a>
+              <a href="#" class="btn btn-outline-light">Perlengkapan Bayi</a>
+              <a href="#" class="btn btn-outline-light">Perabotan</a>
+              <a href="#" class="btn btn-outline-light">Interior</a>
+              <a href="#" class="btn btn-outline-light">Rumah Tangga</a>
+              <a href="#" class="btn btn-outline-light">Eksterior</a>
+              <a href="#" class="btn btn-outline-light">Keuangan</a>
+              <a href="#" class="btn btn-outline-light">Travel</a>
+              <a href="#" class="btn btn-outline-light">Keuangan</a>
+              <a href="#" class="btn btn-outline-light">Travel</a>
+              <a href="#" class="btn btn-outline-light">Perlengkapan Bayi</a>
+              <a href="#" class="btn btn-outline-light">Perabotan</a>
+              <a href="#" class="btn btn-outline-light">Interior</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end kontainer card -->
+
+      <div class="container px-0 my-3">
+        <div class="card py-2 br-kartu">
+          <div class="row">
+            <div class="div d-flex justify-content-between align-items-center">
+              <h5 class="flash-txt ms-3">FLASH SALE</h5>
+              <span class="fw-300 me-3 lihat-semua">Lihat semua</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col mb-3 d-flex justify-content-around">
+              <div class="card" style="width: 13rem">
+                <img src="aset/img/baju.jpg" class="card-img-top flash-sale-img" alt="" />
+                <div class="card-body py-1">
+                  <div class="card-title text-center flash-rp">Rp. 10.000</div>
+                  <h6 class="text-center flash-sold">10 Terjual</h6>
+                </div>
+              </div>
+              <div class="card" style="width: 13rem">
+                <img src="aset/img/sepatu.jpg" class="card-img-top flash-sale-img" alt="" />
+                <div class="card-body py-1">
+                  <div class="card-title text-center flash-rp">Rp. 10.000</div>
+                  <h6 class="text-center flash-sold">10 Terjual</h6>
+                </div>
+              </div>
+              <div class="card" style="width: 13rem">
+                <img src="aset/img/jam.jpg" class="card-img-top flash-sale-img" alt="" />
+                <div class="card-body py-1">
+                  <div class="card-title text-center flash-rp">Rp. 10.000</div>
+                  <h6 class="text-center flash-sold">10 Terjual</h6>
+                </div>
+              </div>
+              <div class="card" style="width: 13rem">
+                <img src="aset/img/ransel.jpg" class="card-img-top flash-sale-img" alt="" />
+                <div class="card-body py-1">
+                  <div class="card-title text-center flash-rp">Rp. 10.000</div>
+                  <h6 class="text-center flash-sold">10 Terjual</h6>
+                </div>
+              </div>
+              <div class="card" style="width: 13rem">
+                <img src="aset/img/tas.jpg" class="card-img-top flash-sale-img" alt="" />
+                <div class="card-body py-1">
+                  <div class="card-title text-center flash-rp">Rp. 10.000</div>
+                  <h6 class="text-center flash-sold">10 Terjual</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- akhir container flash sale -->
+
+      <div class="container rekomendasi">
+        <div class="row">
+          <h3 class="text-center mt-2">Rekomendasi</h3>
+          <hr class="hr-rekomendasi" />
+        </div>
+      </div>
+      <!-- akhir kontainer header rekomendasi -->
+
+      <div class="container rekomendasi-produk mt-3">
+        <div class="row mt-2">
+          <div class="col mx-1 d-grid">
+            <img src="aset/img/tas.jpg" style="width: 9rem; height: 9rem" alt="" />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="harga-rekomendasi">Rp. 10.000</div>
+              <div class="terjual">10rb+ Terjual</div>
+            </div>
+          </div>
+          <div class="col mx-1 d-grid">
+            <img src="aset/img/ransel.jpg" style="width: 9rem; height: 9rem" alt="" />
+            <p>Lorem ipsum dolor sit amet adipisicing elit.</p>
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="harga-rekomendasi">Rp. 10.000</div>
+              <div class="terjual">10rb+ Terjual</div>
+            </div>
+          </div>
+          <div class="col mx-1 d-grid">
+            <img src="aset/img/jam.jpg" style="width: 9rem; height: 9rem" alt="" />
+            <p>Lorem ipsum dolor consectetur adipisicing elit.</p>
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="harga-rekomendasi">Rp. 10.000</div>
+              <div class="terjual">10rb+ Terjual</div>
+            </div>
+          </div>
+          <div class="col mx-1 d-grid">
+            <img src="aset/img/sepatu.jpg" style="width: 9rem; height: 9rem" alt="" />
+            <p>Lorem ipsum dolor sit amteto.</p>
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="harga-rekomendasi">Rp. 10.000</div>
+              <div class="terjual">10rb+ Terjual</div>
+            </div>
+          </div>
+          <div class="col mx-1 d-grid">
+            <img src="aset/img/sepatu.png" style="width: 9rem; height: 9rem" alt="" />
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="harga-rekomendasi">Rp. 10.000</div>
+              <div class="terjual">10rb+ Terjual</div>
+            </div>
+          </div>
+          <div class="col mx-1 d-grid">
+            <img src="aset/img/baju.jpg" style="width: 9rem; height: 9rem" alt="" />
+            <p>Lorem ipsum sit amet consectetur adipisicing elit.</p>
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="harga-rekomendasi">Rp. 10.000</div>
+              <div class="terjual">10rb+ Terjual</div>
+            </div>
+          </div>
+        </div>
+        <!-- row2 -->
+        <div class="row mt-2">
+          <div class="col mx-1 d-grid">
+            <img src="aset/img/tas.jpg" style="width: 9rem; height: 9rem" alt="" />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="harga-rekomendasi">Rp. 10.000</div>
+              <div class="terjual">10rb+ Terjual</div>
+            </div>
+          </div>
+          <div class="col mx-1 d-grid">
+            <img src="aset/img/ransel.jpg" style="width: 9rem; height: 9rem" alt="" />
+            <p>Lorem ipsum dolor sit amet adipisicing elit.</p>
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="harga-rekomendasi">Rp. 10.000</div>
+              <div class="terjual">10rb+ Terjual</div>
+            </div>
+          </div>
+          <div class="col mx-1 d-grid">
+            <img src="aset/img/jam.jpg" style="width: 9rem; height: 9rem" alt="" />
+            <p>Lorem ipsum dolor consectetur adipisicing elit.</p>
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="harga-rekomendasi">Rp. 10.000</div>
+              <div class="terjual">10rb+ Terjual</div>
+            </div>
+          </div>
+          <div class="col mx-1 d-grid">
+            <img src="aset/img/sepatu.jpg" style="width: 9rem; height: 9rem" alt="" />
+            <p>Lorem ipsum dolor sit amteto.</p>
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="harga-rekomendasi">Rp. 10.000</div>
+              <div class="terjual">10rb+ Terjual</div>
+            </div>
+          </div>
+          <div class="col mx-1 d-grid">
+            <img src="aset/img/sepatu.png" style="width: 9rem; height: 9rem" alt="" />
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="harga-rekomendasi">Rp. 10.000</div>
+              <div class="terjual">10rb+ Terjual</div>
+            </div>
+          </div>
+          <div class="col mx-1 d-grid">
+            <img src="aset/img/baju.jpg" style="width: 9rem; height: 9rem" alt="" />
+            <p>Lorem ipsum sit amet consectetur adipisicing elit.</p>
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="harga-rekomendasi">Rp. 10.000</div>
+              <div class="terjual">10rb+ Terjual</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- akhir container rekomendasi produk -->
+
+      <div class="container mt-3 mb-5">
+        <div class="d-flex justify-content-center align-items-center">
+          <button class="btn btn-outline-warning lihat-lainnya fw-400">Lihat Lainnya</button>
+        </div>
+      </div>
+
+      <hr class="hr-akhir-produk" />
+
+      <div class="container mt-5 info-app">
+        <h6>Tokopaktiar - Jual Beli Online</h6>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis non aspernatur libero alias laudantium quos sit, reprehenderit, nemo, voluptate eligendi laboriosam quae hic ducimus beatae aliquid quasi a esse recusandae eum
+          eveniet fugiat vel natus! Sed sunt dignissimos nostrum aperiam nam quod, culpa numquam! Porro, voluptas harum minima omnis excepturi vero velit consequatur aperiam nemo repellat pariatur quod ad veniam sed vel et aut temporibus
+          veritatis corporis aspernatur quos ullam quisquam nihil optio! Quisquam vel cum quod aliquid consequatur commodi at quis! Reprehenderit totam odio similique sapiente provident. Sed, quo dolorem blanditiis porro aliquam quod iusto
+          assumenda non et nesciunt.
+        </p>
+        <br />
+        <h6>Belanja Online Terpercaya di Tokopaktiar</h6>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus est ex error id adipisci cupiditate saepe sint officiis ab sapiente voluptate consequuntur qui deserunt quidem, distinctio dolorum fuga iusto iure molestias
+          perspiciatis ducimus eaque! Cumque autem quibusdam necessitatibus odio sunt unde culpa saepe eaque quae ullam nemo expedita excepturi, dignissimos doloremque illo tenetur, ratione voluptate ex vel natus sint eum iste sequi
+          architecto. Libero a aut tempore molestiae quia quae eaque cum nostrum porro, fugit sunt, adipisci magni inventore distinctio expedita vitae sapiente iusto nam culpa provident voluptatum! Libero vero, consectetur vitae sequi
+          dolorem quidem nisi nemo vel quos, accusantium soluta mollitia! Necessitatibus, laborum nisi? Maiores quaerat modi libero odit nihil, accusantium reiciendis est placeat necessitatibus itaque non consequatur ab dolores nobis,
+          accusamus doloribus voluptate corporis quod culpa nostrum magni illo esse. Velit ex laborum perspiciatis aliquid accusantium adipisci reprehenderit expedita culpa ratione officiis nostrum numquam ut inventore illum, quidem
+          nesciunt in neque accusamus! Reiciendis inventore velit recusandae.
+        </p>
+        <p>
+          At quaerat rem iusto atque maxime dolore sint iste adipisci consequuntur vitae minima laboriosam explicabo, aliquid voluptatum aut, debitis enim impedit mollitia voluptates! Quasi at eos nesciunt consectetur optio illum nemo
+          repellat iure dolorem similique, error fugiat quo reiciendis unde vero possimus exercitationem adipisci ut corporis?
+        </p>
+        <p>
+          Eaque eos dolores facilis, esse iure ab rem rerum facere doloremque sit, culpa nobis, nesciunt praesentium molestias veritatis minus ut doloribus totam aliquam eius quasi cumque earum quibusdam? Veritatis ducimus, nihil commodi
+          asperiores fugit ea ab officiis quas voluptates voluptate repudiandae! Placeat a delectus asperiores dolore impedit facilis quaerat minus dolor saepe praesentium ipsam cumque optio ducimus non, et harum? Quo aspernatur consequatur
+          quisquam voluptate neque ea quos laudantium, impedit labore eos officia similique ex atque, dicta excepturi. Eum, ratione! Tempore aliquid, id earum laboriosam eius quod! Illum id consequuntur recusandae delectus enim quibusdam
+          atque tempora!
+        </p>
+      </div>
+      <div class="container">
+        <hr />
+      </div>
+
+      <div class="container mt-5 pb-5">
+        <div class="row link-kategori">
+          <div class="col">
+            <h6 class="fw-bold">ELEKTRONIK</h6>
+            <a href="#">Fashion</a> | <a href="#">Mainan</a> | <a href="#">Kecantikan</a> | <a href="#">Kesehatan</a> | <a href="#">Rumah Tangga</a> | <a href="#">Interior</a> | <a href="#">Baju Anak</a> | <a href="#">Peralatan</a> |
+            <a href="#">Elektronik</a> | <a href="#">Lorem</a> | <a href="#">Lorem ipsum</a> | <a href="#">Lorem ipsum dolor</a> | <a href="#">dolor sit</a> | <a href="#">fugiat repellendus</a> | <a href="#">Explicabo</a> |
+            <a href="#">consectetur</a> | <a href="#">corporis</a> | <a href="#">iure ducimus</a> | <a href="#">nostrum ab</a> | <a href="#">voluptatem</a> | <a href="#">Fashion</a> | <a href="#">Mainan</a> | <a href="#">Kecantikan</a> |
+            <a href="#">Kesehatan</a> | <a href="#">Rumah Tangga</a> | <a href="#">Interior</a> | <a href="#">Baju Anak</a> | <a href="#">Peralatan</a> | <a href="#">Elektronik</a> | <a href="#">Lorem</a> | <a href="#">Lorem ipsum</a> |
+            <a href="#">Lorem ipsum dolor</a> | <a href="#">dolor sit</a> | <a href="#">fugiat repellendus</a> | <a href="#">Explicabo</a> | <a href="#">consectetur</a> | <a href="#">corporis</a> | <a href="#">iure ducimus</a> |
+            <a href="#">nostrum ab</a> | <a href="#">voluptatem</a> | <a href="#">Fashion</a> | <a href="#">Mainan</a> | <a href="#">Kecantikan</a> | <a href="#">Kesehatan</a> | <a href="#">Rumah Tangga</a> | <a href="#">Interior</a> |
+            <a href="#">Baju Anak</a> | <a href="#">Peralatan</a> | <a href="#">Elektronik</a> | <a href="#">Lorem</a> | <a href="#">Lorem ipsum</a> | <a href="#">Lorem ipsum dolor</a> | <a href="#">dolor sit</a> |
+            <a href="#">fugiat repellendus</a> | <a href="#">Explicabo</a> | <a href="#">consectetur</a> | <a href="#">corporis</a> | <a href="#">iure ducimus</a> | <a href="#">nostrum ab</a> | <a href="#">voluptatem</a> |
+          </div>
+          <div class="col">
+            <h6 class="fw-bold">MAKANAN & MINUMAN</h6>
+            <a href="#">Fashion</a> | <a href="#">Mainan</a> | <a href="#">Kecantikan</a> | <a href="#">Kesehatan</a> | <a href="#">Rumah Tangga</a> | <a href="#">Interior</a> | <a href="#">Baju Anak</a> | <a href="#">Peralatan</a> |
+            <a href="#">Elektronik</a> | <a href="#">Lorem</a> | <a href="#">Lorem ipsum</a> | <a href="#">Lorem ipsum dolor</a> | <a href="#">dolor sit</a> | <a href="#">fugiat repellendus</a> | <a href="#">Explicabo</a> |
+            <a href="#">consectetur</a> | <a href="#">corporis</a> | <a href="#">iure ducimus</a> | <a href="#">nostrum ab</a> | <a href="#">voluptatem</a> | <a href="#">Fashion</a> | <a href="#">Mainan</a> | <a href="#">Kecantikan</a> |
+            <a href="#">Kesehatan</a> | <a href="#">Rumah Tangga</a> | <a href="#">Interior</a> | <a href="#">Baju Anak</a> | <a href="#">Peralatan</a> | <a href="#">Elektronik</a> | <a href="#">Lorem</a> | <a href="#">Lorem ipsum</a> |
+            <a href="#">Lorem ipsum dolor</a> | <a href="#">dolor sit</a> | <a href="#">fugiat repellendus</a> | <a href="#">Explicabo</a> | <a href="#">consectetur</a> | <a href="#">corporis</a> | <a href="#">iure ducimus</a> |
+            <a href="#">nostrum ab</a> | <a href="#">voluptatem</a> |
+          </div>
+          <div class="col">
+            <h6 class="fw-bold">PERAWATAN & KECANTIKAN</h6>
+            <a href="#">Fashion</a> | <a href="#">Mainan</a> | <a href="#">Kecantikan</a> | <a href="#">Kesehatan</a> | <a href="#">Rumah Tangga</a> | <a href="#">Interior</a> | <a href="#">Baju Anak</a> | <a href="#">Peralatan</a> |
+            <a href="#">Elektronik</a> | <a href="#">Lorem</a> | <a href="#">Lorem ipsum</a> | <a href="#">Lorem ipsum dolor</a> | <a href="#">dolor sit</a> | <a href="#">fugiat repellendus</a> | <a href="#">Explicabo</a> |
+            <a href="#">consectetur</a> | <a href="#">corporis</a> | <a href="#">iure ducimus</a> | <a href="#">nostrum ab</a> | <a href="#">voluptatem</a> | <a href="#">Fashion</a> | <a href="#">Mainan</a> | <a href="#">Kecantikan</a> |
+            <a href="#">Kesehatan</a> | <a href="#">Rumah Tangga</a> | <a href="#">Interior</a> | <a href="#">Baju Anak</a> | <a href="#">Peralatan</a> | <a href="#">Elektronik</a> | <a href="#">Lorem</a> | <a href="#">Lorem ipsum</a> |
+            <a href="#">Lorem ipsum dolor</a> | <a href="#">dolor sit</a> | <a href="#">fugiat repellendus</a> | <a href="#">Explicabo</a> | <a href="#">consectetur</a> | <a href="#">corporis</a> | <a href="#">iure ducimus</a> |
+            <a href="#">nostrum ab</a> | <a href="#">voluptatem</a> | <a href="#">Fashion</a> | <a href="#">Mainan</a> | <a href="#">Kecantikan</a> | <a href="#">Kesehatan</a> | <a href="#">Rumah Tangga</a> | <a href="#">Interior</a> |
+            <a href="#">Baju Anak</a> | <a href="#">Peralatan</a> | <a href="#">Elektronik</a> | <a href="#">Lorem</a> | <a href="#">Lorem ipsum</a> | <a href="#">Lorem ipsum dolor</a> | <a href="#">dolor sit</a> |
+            <a href="#">fugiat repellendus</a> | <a href="#">Explicabo</a> | <a href="#">consectetur</a> | <a href="#">corporis</a> | <a href="#">iure ducimus</a> | <a href="#">nostrum ab</a> | <a href="#">voluptatem</a> |
+          </div>
+          <div class="col">
+            <h6 class="fw-bold">HANDPHONE & AKSESORIS</h6>
+            <a href="#">Fashion</a> | <a href="#">Mainan</a> | <a href="#">Kecantikan</a> | <a href="#">Kesehatan</a> | <a href="#">Rumah Tangga</a> | <a href="#">Interior</a> | <a href="#">Baju Anak</a> | <a href="#">Peralatan</a> |
+            <a href="#">Elektronik</a> | <a href="#">Lorem</a> | <a href="#">Lorem ipsum</a> | <a href="#">Lorem ipsum dolor</a> | <a href="#">dolor sit</a> | <a href="#">fugiat repellendus</a> | <a href="#">Explicabo</a> |
+            <a href="#">consectetur</a> | <a href="#">corporis</a> | <a href="#">iure ducimus</a> | <a href="#">nostrum ab</a> | <a href="#">voluptatem</a> | <a href="#">Fashion</a> | <a href="#">Mainan</a> | <a href="#">Kecantikan</a> |
+            <a href="#">Kesehatan</a> | <a href="#">Rumah Tangga</a> | <a href="#">Interior</a> | <a href="#">Baju Anak</a> | <a href="#">Peralatan</a> | <a href="#">Elektronik</a> | <a href="#">Lorem</a> | <a href="#">Lorem ipsum</a> |
+            <a href="#">Lorem ipsum dolor</a> | <a href="#">dolor sit</a> | <a href="#">fugiat repellendus</a> | <a href="#">Explicabo</a> | <a href="#">consectetur</a> | <a href="#">corporis</a> | <a href="#">iure ducimus</a> |
+            <a href="#">nostrum ab</a> | <a href="#">voluptatem</a> | <a href="#">Fashion</a> | <a href="#">Mainan</a> | <a href="#">Kecantikan</a> | <a href="#">Kesehatan</a> | <a href="#">Rumah Tangga</a> | <a href="#">Interior</a> |
+            <a href="#">Baju Anak</a> | <a href="#">Peralatan</a> | <a href="#">Elektronik</a> | <a href="#">Lorem</a> | <a href="#">Lorem ipsum</a> | <a href="#">Lorem ipsum dolor</a> | <a href="#">dolor sit</a> |
+            <a href="#">fugiat repellendus</a> | <a href="#">Explicabo</a> | <a href="#">consectetur</a> | <a href="#">corporis</a> | <a href="#">iure ducimus</a> | <a href="#">nostrum ab</a> | <a href="#">voluptatem</a> |
+            <a href="#">Fashion</a> | <a href="#">Mainan</a> | <a href="#">Kecantikan</a> | <a href="#">Kesehatan</a> | <a href="#">Rumah Tangga</a> | <a href="#">Interior</a> | <a href="#">Baju Anak</a> | <a href="#">Peralatan</a> |
+            <a href="#">Elektronik</a> | <a href="#">Lorem</a> | <a href="#">Lorem ipsum</a> | <a href="#">Lorem ipsum dolor</a> | <a href="#">dolor sit</a> | <a href="#">fugiat repellendus</a> | <a href="#">Explicabo</a> |
+            <a href="#">consectetur</a> | <a href="#">corporis</a> | <a href="#">iure ducimus</a> | <a href="#">nostrum ab</a> | <a href="#">voluptatem</a> |
+          </div>
+          <div class="col">
+            <h6 class="fw-bold">FASHION</h6>
+            <a href="#">Fashion</a> | <a href="#">Mainan</a> | <a href="#">Kecantikan</a> | <a href="#">Kesehatan</a> | <a href="#">Rumah Tangga</a> | <a href="#">Interior</a> | <a href="#">Baju Anak</a> | <a href="#">Peralatan</a> |
+            <a href="#">Elektronik</a> | <a href="#">Lorem</a> | <a href="#">Lorem ipsum</a> | <a href="#">Lorem ipsum dolor</a> | <a href="#">dolor sit</a> | <a href="#">fugiat repellendus</a> | <a href="#">Explicabo</a> |
+            <a href="#">consectetur</a> | <a href="#">corporis</a> | <a href="#">iure ducimus</a> | <a href="#">nostrum ab</a> | <a href="#">voluptatem</a> | <a href="#">Fashion</a> | <a href="#">Mainan</a> | <a href="#">Kecantikan</a> |
+            <a href="#">Kesehatan</a> | <a href="#">Rumah Tangga</a> | <a href="#">Interior</a> | <a href="#">Baju Anak</a> | <a href="#">Peralatan</a> | <a href="#">Elektronik</a> | <a href="#">Lorem</a> | <a href="#">Lorem ipsum</a> |
+            <a href="#">Lorem ipsum dolor</a> | <a href="#">dolor sit</a> | <a href="#">fugiat repellendus</a> | <a href="#">Explicabo</a> | <a href="#">consectetur</a> | <a href="#">corporis</a> | <a href="#">iure ducimus</a> |
+            <a href="#">nostrum ab</a> | <a href="#">voluptatem</a> |
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>
